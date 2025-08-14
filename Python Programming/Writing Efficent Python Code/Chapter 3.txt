@@ -1031,8 +1031,15 @@ print(len(uniq_names_set))
 # Check that both unique collections are equivalent
 print(sorted(uniq_names_func) == sorted(uniq_names_set))
 
-Use the most efficient approach for gathering unique items to collect the unique Pokémon types (from the primary_types list) and Pokémon generations (from the generations list).
+Within your IPython console, use %timeit to compare the find_unique_items() function with using a set data type to collect unique Pokémon character names in names.
 
+Which membership testing was faster?
+Possible answers
+X   Using a set to collect unique values is faster.
+    Using the provided function that uses a loop to gather unique items is faster.
+    Both approaches have the same runtime.
+
+Use the most efficient approach for gathering unique items to collect the unique Pokémon types (from the primary_types list) and Pokémon generations (from the generations list).
 
 # Use find_unique_items() to collect unique Pokémon names
 uniq_names_func = find_unique_items(names)
